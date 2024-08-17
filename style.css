@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+    width: 60px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image:  url(IMG_5271.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -90px;
+    background-color: rgb(79, 121, 236);
+    
+}
+
+.mascote{
+    display: flex;
+    position: relative;
+    margin-top: -90px;
+    transform: scaleX(-1);
+    width: 90px;
+    left: 800px;
+}
+
+.logo{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.cabecalho {
+    padding: 0px 0px;
+    background-color: rgba(0, 0, 255, 0.651);
+}
+
+.lista{
+    font-size: 1.3rem;
+    list-style: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: -80px;
+    justify-content: center;
+    gap: 3rem;
+    left: 950px;
+    
+}
+
+.link a {
+    padding: 0px 50px;
+    position: relative;
+    font-size: 2.5rem;
+    padding-bottom: 0.75rem;
+    color: yellow;
+    animation: FadeInLista ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.link2 a {
+    position: relative;
+    font-size: 1.8rem;
+    right: 60rem;
+    text-align: center;
+    top: 55px;
+    padding-bottom: 0.75rem;
+    color: yellow;
+    animation: FadeInLista ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0.5rem;
+    left: 1.3rem;
+    background-color: rgb(246, 255, 0);
+    transition: all 0.3s ease;
+}
+
+.link2 a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 2;
+    bottom: 0.5rem;
+    left:  0;
+    background-color: rgb(246, 255, 0);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+    background-color: aquamarine;
+}
+
+.link2 a:hover::after{
+    width: 100%;
+    background-color: aquamarine;
+}
+
+
+.link a:hover{
+    color: rgb(2, 206, 233);
+}
+
+.link2 a:hover{
+    color: rgb(2, 206, 233);
+}
+/*ANIMAÇÃO DA LOGO DO BOCA JUNIORS*/
+.fade-in {
+    animation: FadeInAnimation ease 5s;
+    animation-iteration-count: 1; /*REPETIR ANIMAÇÃO 1 VEZ*/
+    animation-fill-mode: forwards;
+}
+
+.fade-lista{
+    animation: FadeInLista ease 7s;
+    animation-iteration-count: 1; /*REPETIR ANIMAÇÃO 1 VEZ*/
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes FadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*ANIMAÇÃO DA LISTA*/
+@keyframes FadeInLista {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.container{
+    max-width: 1400px;
+    margin: none;
+    padding: 2rem 2rem;
+    
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0rem;
+    padding: 0px 0px;
+}
+
+
+
+header .content h1{
+    margin-bottom: 5px;
+    color:yellow;
+    font-size: 6rem;
+    box-sizing: none;
+    font-weight: 700;
+    line-height: 90px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.402);
+    
+}
+
+header .content h2{
+    margin-top: 5px;
+    line-height: 40rem;
+    font-weight: 500;
+    font-size: 2.3rem;
+    color: yellow;
+}
+
